@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VJCC NAME="seis2" TYPE="5" ID="6.0">
+    <Catalog GLOBALVAL="VJC6.0"/>
+    <Catalog GLOBALTREE="VJC6.0">
+        <Catalog SUBCOUNT="1" MAIN="VJC6.0" ROTX="341">
+            <BLOCK ID="41"/>
+            <POS X="341" Y="190"/>
+            <VAL>
+                <MOTORTYPE ID="0"/>
+                <LEFTMOTORCHANNEL ID="0"/>
+                <LEFTMOTORPOWER ID="1"/>
+                <RIGHTMOTORCHANNEL ID="1"/>
+                <RIGHTMOTORPOWER ID="1"/>
+                <MOTORNUMBER ID="1"/>
+                <MOTORCHANNELMAP ID="1:1;2:2;3:3;4:4;5:5;6:6;7:7"/>
+                <MOTORPLACETYPE ID="0"/>
+                <MOTORTHRESHOLD ID="0.50"/>
+            </VAL>
+            <CHILD ID="NEXT">
+                <BLOCK ID="11"/>
+                <POS X="341" Y="277"/>
+                <VAL>
+                    <NAME ID="Ida"/>
+                    <INDEX ID="1"/>
+                </VAL>
+            </CHILD>
+        </Catalog>
+        <SUBPROGRAM NAME="Ida" TYPE="1" X="341" ID="1" Y="104">
+            <BLOCK ID="25"/>
+            <POS X="341" Y="190"/>
+            <VAL>
+                <MOTORPARAMETER ID="132,200,-70;0,0,-20;0,0,-20;132,200,-70"/>
+                <CURRENTPORT ID="3"/>
+            </VAL>
+            <CHILD ID="NEXT">
+                <BLOCK ID="43"/>
+                <POS X="341" Y="277"/>
+                <VAL>
+                    <TYPE ID="0"/>
+                    <SPEED ID="70"/>
+                    <LEFTSPEED ID="0"/>
+                    <RIGHTSPEED ID="0"/>
+                    <CYCLETIMES ID="1"/>
+                    <CROSSINGTIME ID="0"/>
+                    <CROSSING ID="1"/>
+                </VAL>
+            </CHILD>
+        </SUBPROGRAM>
+    </Catalog>
+    <Catalog GLOBALMTN="VJC6.0"/>
+    <Catalog GLOABLETIP="VJC6.0">
+        <Catalog ID="0"/>
+        <Catalog ID="1"/>
+    </Catalog>
+    <Catalog BLOCK="VJC6.0">
+        <Catalog Calc="VJC6.0"/>
+        <Catalog Log="VJC6.0"/>
+        <Catalog Var="VJC6.0"/>
+        <Catalog BaseBlock="VJC6.0"/>
+    </Catalog>
+    <Catalog SIZE="177"/>
+</VJCC>

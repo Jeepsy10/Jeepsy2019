@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VJCC TYPE="5" ID="6.0" NAME="3definitiv">
+    <Catalog GLOBALVAL="VJC6.0"/>
+    <Catalog GLOBALTREE="VJC6.0">
+        <Catalog SUBCOUNT="2" ROTX="341" MAIN="VJC6.0">
+            <BLOCK ID="41"/>
+            <POS X="341" Y="190"/>
+            <VAL>
+                <MOTORTYPE ID="0"/>
+                <LEFTMOTORCHANNEL ID="0"/>
+                <LEFTMOTORPOWER ID="-1"/>
+                <RIGHTMOTORCHANNEL ID="3"/>
+                <RIGHTMOTORPOWER ID="-1"/>
+                <MOTORNUMBER ID="0"/>
+                <MOTORCHANNELMAP ID="1:1;2:0;3:2;4:3;5:4;6:0;7:5"/>
+                <MOTORPLACETYPE ID="0"/>
+                <MOTORTHRESHOLD ID="0.50"/>
+            </VAL>
+            <CHILD ID="NEXT">
+                <BLOCK ID="11"/>
+                <POS X="341" Y="277"/>
+                <VAL>
+                    <NAME ID="ida"/>
+                    <INDEX ID="1"/>
+                </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="12"/>
+                    <POS X="341" Y="363"/>
+                    <VAL>
+                        <DELAY ID="0.5"/>
+                    </VAL>
+                    <CHILD ID="NEXT">
+                        <BLOCK ID="11"/>
+                        <POS X="341" Y="450"/>
+                        <VAL>
+                            <NAME ID="regreso"/>
+                            <INDEX ID="2"/>
+                        </VAL>
+                    </CHILD>
+                </CHILD>
+            </CHILD>
+        </Catalog>
+        <SUBPROGRAM TYPE="1" X="341" ID="1" NAME="ida" Y="104">
+            <BLOCK ID="25"/>
+            <POS X="341" Y="190"/>
+            <VAL>
+                <MOTORPARAMETER ID="132,180,-50;0,0,-20;0,0,-20;132,180,-50"/>
+                <CURRENTPORT ID="0"/>
+            </VAL>
+            <CHILD ID="NEXT">
+                <BLOCK ID="43"/>
+                <POS X="341" Y="276"/>
+                <VAL>
+                    <TYPE ID="0"/>
+                    <SPEED ID="80"/>
+                    <LEFTSPEED ID="0"/>
+                    <RIGHTSPEED ID="0"/>
+                    <CYCLETIMES ID="1"/>
+                    <CROSSINGTIME ID="0"/>
+                    <CROSSING ID="1"/>
+                </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="25"/>
+                    <POS X="341" Y="363"/>
+                    <VAL>
+                        <MOTORPARAMETER ID="132,600,-50;0,0,-20;0,0,-20;132,290,-50"/>
+                        <CURRENTPORT ID="0"/>
+                    </VAL>
+                    <CHILD ID="NEXT">
+                        <BLOCK ID="44"/>
+                        <POS X="341" Y="449"/>
+                        <VAL>
+                            <SPEED ID="60"/>
+                            <LEFTSPEED ID="0"/>
+                            <RIGHTSPEED ID="0"/>
+                            <CROSSINGTIME ID="1.2"/>
+                            <TYPE ID="1"/>
+                        </VAL>
+                    </CHILD>
+                </CHILD>
+            </CHILD>
+        </SUBPROGRAM>
+        <SUBPROGRAM TYPE="1" X="341" ID="2" NAME="regreso" Y="104">
+            <BLOCK ID="25"/>
+            <POS X="341" Y="190"/>
+            <VAL>
+                <MOTORPARAMETER ID="132,590,50;0,0,-20;0,0,-20;132,590,50"/>
+                <CURRENTPORT ID="0"/>
+            </VAL>
+            <CHILD ID="NEXT">
+                <BLOCK ID="12"/>
+                <POS X="341" Y="276"/>
+                <VAL>
+                    <DELAY ID="0.2"/>
+                </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="25"/>
+                    <POS X="341" Y="363"/>
+                    <VAL>
+                        <MOTORPARAMETER ID="132,330,-50;0,0,-20;0,0,-20;132,75,50"/>
+                        <CURRENTPORT ID="0"/>
+                    </VAL>
+                    <CHILD ID="NEXT">
+                        <BLOCK ID="43"/>
+                        <POS X="341" Y="449"/>
+                        <VAL>
+                            <TYPE ID="0"/>
+                            <SPEED ID="50"/>
+                            <LEFTSPEED ID="0"/>
+                            <RIGHTSPEED ID="0"/>
+                            <CYCLETIMES ID="1"/>
+                            <CROSSINGTIME ID="1"/>
+                            <CROSSING ID="1"/>
+                        </VAL>
+                    </CHILD>
+                </CHILD>
+            </CHILD>
+        </SUBPROGRAM>
+    </Catalog>
+    <Catalog GLOBALMTN="VJC6.0"/>
+    <Catalog GLOABLETIP="VJC6.0">
+        <Catalog ID="0"/>
+        <Catalog ID="1"/>
+        <Catalog ID="2"/>
+    </Catalog>
+    <Catalog BLOCK="VJC6.0">
+        <Catalog Calc="VJC6.0"/>
+        <Catalog Log="VJC6.0"/>
+        <Catalog Var="VJC6.0"/>
+        <Catalog BaseBlock="VJC6.0">
+            <Block>
+                <BLOCK ID="11"/>
+                <POS X="534" Y="260"/>
+                <VAL>
+                    <NAME ID="regreso"/>
+                    <INDEX ID="2"/>
+                </VAL>
+            </Block>
+            <Block>
+                <BLOCK ID="25"/>
+                <POS X="135" Y="694"/>
+                <VAL>
+                    <MOTORPARAMETER ID="128,0,-20;0,0,-20;0,0,-20;0,0,-20"/>
+                    <CURRENTPORT ID="0"/>
+                </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="25"/>
+                    <POS X="135" Y="780"/>
+                    <VAL>
+                        <MOTORPARAMETER ID="128,0,-20;0,0,-20;0,0,-20;0,0,-20"/>
+                        <CURRENTPORT ID="0"/>
+                    </VAL>
+                </CHILD>
+            </Block>
+            <Block>
+                <BLOCK ID="26"/>
+                <POS X="118" Y="358"/>
+                <VAL>
+                    <MOTORPARAMETER ID="0,0,-20;0,0,-20;136,17,-50;0,0,-20"/>
+                    <CURRENTPORT ID="0"/>
+                </VAL>
+            </Block>
+        </Catalog>
+    </Catalog>
+    <Catalog SIZE="166"/>
+</VJCC>
